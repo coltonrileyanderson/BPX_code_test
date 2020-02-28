@@ -5,7 +5,7 @@ Brief Methodology Explanation:
 ------------------------------
 - I implemented a recursive algorithm that finds max "place descriptor" (e.g. thousands) and recursively calls generate_words on the number at that descriptor, and then remainder below that descriptor. 
 	- ex: 1234
-		- first iteration call 1234
+		- first iteration call generate_words(1234)
 		- next begin building string with generate_words(1) + " thousand " + generate_words(234)
 		- next interation "one" (returned from ^ in recursion tree) + " thousand " + generate_words(2) + " hundred " + generate_words(34) (+ etc ...)
 
@@ -15,11 +15,11 @@ Files and Interactions:
 - ex_1.py: 
 	- file that contains "generate_words" method that will generate the word representations of numerical value
 	- can be executed in multiple ways:
-		python3 ex_1.py 
-		- will execute main and prompt user for a number or "test" to run the unittests
+		- python3 ex_1.py 
+			- will execute main and prompt user for a number or "test" to run the unittests
 
-		python3 ex_1.py [ARG]
-		- [ARG] can be a number or "test" to run unittests
+		- python3 ex_1.py [ARG]
+			- [ARG] can be a number or "test" to run unittests
 
 - test_ex_1.py:
 	- file contains TestEx1 unittest class
