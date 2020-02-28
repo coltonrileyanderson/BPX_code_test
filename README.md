@@ -22,8 +22,7 @@ Files and Interactions:
 			- [ARG] can be a number or "test" to run unittests
 
 - test_ex_1.py:
-	- file contains TestEx1 unittest class
-	- is called from main of ex_1.py
+	- file contains TestEx1 unittest class and is called from main of ex_1.py
 	- runs simple edge case tests, as well as 20 psuedo-random number generated tests
 	- simple tests assertEquals, random tests require validation
 
